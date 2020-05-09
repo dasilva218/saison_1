@@ -6,10 +6,13 @@ let prix;
 
 // fonction qui calcule le montant de la facture après remise
 let calculeFacture = (x=0) => {
+    // remise
     const remise = 10 / 100;
+    //prix pour le droit à la remise
     const prixMoyenne = 40000;
     let calcuPrix;
     if (x > 0 && !(isNaN(x))) {
+        // calcule de la remise si le montant est supérieur à 40 000
         if (x > prixMoyenne) {
             calcuPrix = x * (1 - remise);
             window.alert(`Votre facture après remise est : ${calcuPrix}.Fcfa`)
@@ -22,6 +25,7 @@ let calculeFacture = (x=0) => {
 }
 
 prix = parseInt(window.prompt('Entrez le montant de votre facture'), 10);
+//arrondi sur le resultat
 prix = Math.round(prix);
 
 //appel de la fonction pour le calcule de la facture
