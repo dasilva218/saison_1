@@ -5,6 +5,7 @@ window.alert("épisode-6 : Ce programme permet de faire la moyenne de trois nomb
 // fonction calcul de la moyenne
 
 let Moyenne = (x, y, z) => {
+    //condition refus des lettres
     if (isNaN(x) && isNaN(y) && isNaN(z)) {
         return window.alert("Entrer des nombres");
     } else {
