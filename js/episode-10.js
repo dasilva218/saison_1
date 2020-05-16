@@ -5,7 +5,7 @@ window.alert('épisode-10 : Ce programme calcule le montant d’une facture et a
 let prix;
 
 // fonction qui calcule le montant de la facture après remise
-let calculeFacture = (x=0) => {
+let calculeFacture = (x = 0) => {
     // remise
     const remise = 10 / 100;
     //prix pour le droit à la remise
@@ -21,7 +21,7 @@ let calculeFacture = (x=0) => {
         }
     } else {
         window.alert(`${x} : le montant de votre facture n'est pas valide`)
-}
+    }
 }
 
 prix = parseInt(window.prompt('Entrez le montant de votre facture'), 10);
